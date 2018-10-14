@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store | Role</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../static/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main-window">
+            <div class="dash-lf">
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-gear"></i> Manage Roles</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_role.html" class="active">Add New Role</a>
+                        </li>
+                        <li>
+                            <a href="#">All Roles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-users"></i> Manage Users</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">Add New User</a>
+                        </li>
+                        <li>
+                            <a href="#">Assign User Role</a>
+                        </li>
+                        <li>
+                            <a href="#">All Users</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-shopping-cart"></i> Manage Categories</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">Add New Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Sub-Category</a>
+                        </li>
+                        <li>
+                            <a href="#">All Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Product</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">Add New Product</a>
+                        </li>
+                        <li>
+                            <a href="#">All Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Sales</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">Add New Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">All Sales Records</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dash-rt">
+                <div class="dash-rt-top">
+                    <span>Welcome to Store Manager Administrator Dashboard </span>|
+                    <a href="#"><i class="fa fa-sun-o"></i> Your Account</a>|
+                    <a href="../../index.html"><i class="fa fa-sign-out"></i> Log out</a>
+                </div>
+                <div class="dash-rt-main">
+                    <div class="pages-view">
+                        <div class="page-title">
+                            <span>New Role Form</span>
+                        </div>
+                        <div class="page-content">
+                            <form id="addRoleForm">
+                                <label for="role_name">Role Name:</label>
+                                <input name="role_name" type="text">
+                                <button type="submit" name="add_role" id="add_role">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
