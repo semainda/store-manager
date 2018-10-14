@@ -198,8 +198,60 @@ li a:hover {
     color: #0cb;
     padding-left: 10px;
     padding-right: 10px;
+    padding: 10px;
 }
 .dash-rt-top a:hover{
     color: #1ab394;
     font-weight: 400;
+}
+
+.active {
+    color: #1ab394;
+}
+/*dashboard-content area*/
+.pages-view{
+    width: 99%;
+    margin: 10px 0 10px 10px;
+    display: block;
+    background-color: #f4f4f4;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.18), 0 1px 3px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    flex-direction: column;
+    font-size: 13px;
+    color: #0cb;
+}
+.page-title span{
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: 500;
+}
+.page-title{
+    border-bottom: 1px solid #ddd;
+}
+.page-content{
+    padding: 20px;
+}
+#addRoleForm {
+    width: 100%;
+    font-family:"Roboto",Arial,sans-serif;
+    height: 38px;
+}
+
+#addRoleForm label, input, button {
+    display: inline-block;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+}
+#addRoleForm label{
+    width: 10%;
+}
+
+#addRoleForm input {
+    width: 60%;
+    height: 34px;
+}
+#addRoleForm button{
+    width: 10%;
 }
