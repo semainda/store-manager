@@ -3,16 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>User Login</title>
+    <title>Store | Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="UI/static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="UI/static/css/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <script src="UI/static/js/main.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="main">
+        <div id="main-window">
             <div id="login">
                 <div id="title">
                     <a href="index.html">Store | <b>MANAGER</b></a>
@@ -31,16 +30,15 @@
                         <option value="store-owner">Administrator</option>
                         <option value="store-attendant">Attendant</option>
                     </select>
-                    <button type="submit" name="button">Login</button>
+                    <button type="submit" name="button" id="btn-login">Login</button>
                 </form>
             </div>
-            <div class="footer">
-                <footer>
-                    <hr>
-                    <span>&copy; Andela 21 - 2018.All rights reserved.</span>
-                </footer>
-            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <span>&copy; Andela 21 - 2018.All rights reserved.</span>
         </div>
     </div>
+    <script src="UI/static/js/main.js"></script>
 </body>
 </html>
