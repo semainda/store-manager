@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | Admin</title>
+    <title>Store | Role</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -18,7 +18,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_role.html">Add New Role</a>
+                            <a href="add_role.html" class="active">Add New Role</a>
                         </li>
                         <li>
                             <a href="#">All Roles</a>
@@ -91,6 +91,16 @@
                 </div>
                 <div class="dash-rt-main">
                     <div class="pages-view">
+                        <div class="page-title">
+                            <span>New Role Form</span>
+                        </div>
+                        <div class="page-content">
+                            <form id="addRoleForm">
+                                <label for="role_name">Role Name:</label>
+                                <input name="role_name" type="text">
+                                <button type="submit" name="add_role" id="add_role">Add</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
