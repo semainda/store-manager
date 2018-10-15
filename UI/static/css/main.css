@@ -225,12 +225,29 @@ li a:hover {
     text-align: left;
     font-weight: 500;
 }
-.page-title{
+.page-title {
     color: #0cb;
     border-bottom: 1px solid #ddd;
 }
 .page-content{
     padding: 20px;
+}
+
+.pages-view a {
+    display: block;
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #0cb;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.pages-view a:hover{
+    background-color: #1ab394;
 }
 #addRoleForm {
     width: 100%;
