@@ -256,13 +256,14 @@ li a:hover {
     width: 10%;
 }
 /*Styling tables*/
-table {
+table, .tb-form {
     width: 100%;
     color: #555;
 }
 th, td {
     border-bottom: 1px solid #ddd;
 }
+
 table th, td {
     padding: 5px;
 }
@@ -271,4 +272,19 @@ td a{
 }
 td a:hover{
     color: #1ab394;
+}
+
+.tb-form td {
+    border: none;
+}
+
+td , input, label, button {
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+}
+
+.tb-form #add_user {
+    width: 30%;
+    align-content: right;
 }

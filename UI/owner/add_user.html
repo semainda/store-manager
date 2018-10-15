@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | Admin</title>
+    <title>Store | Role</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -30,7 +30,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_user.html">Add New User</a>
+                            <a href="add_user.html" class="active">Add New User</a>
                         </li>
                         <li>
                             <a href="#">Assign User Role</a>
@@ -91,6 +91,33 @@
                 </div>
                 <div class="dash-rt-main">
                     <div class="pages-view">
+                        <div class="page-title">
+                            <span>New User Form</span>
+                        </div>
+                        <div class="page-content">
+                            <form id="addUserForm">
+                                <table class="tb-form">
+                                    <tr>
+                                        <td><label for="first_name">First Name:</label></td>
+                                        <td><input name="first_name" type="text"></td>
+                                        <td><label for="last_name">Last Name:</label></td>
+                                        <td> <input name="last_name" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email:</label></td>
+                                        <td><input name="email" type="text"></td>
+                                        <td><label for="username">Username:</label></td>
+                                        <td><input name="first_name" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button type="submit" id="add_user">Add</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
