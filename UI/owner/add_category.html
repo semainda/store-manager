@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | Assignment </title>
+    <title>Store | Category</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -33,7 +33,7 @@
                             <a href="add_user.html">Add New User</a>
                         </li>
                         <li>
-                            <a href="assign_role.html" class="active">Assign User Role</a>
+                            <a href="assign_role.html">Assign User Role</a>
                         </li>
                         <li>
                             <a href="users.html">All Users</a>
@@ -45,7 +45,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_category.html">Add New Category</a>
+                            <a href="add_category.html" class="active">Add New Category</a>
                         </li>
                         <li>
                             <a href="#">Add Sub-Category</a>
@@ -92,35 +92,13 @@
                 <div class="dash-rt-main">
                     <div class="pages-view">
                         <div class="page-title">
-                            <span>New Role Assignment Form</span>
+                            <span>New Product Category Form</span>
                         </div>
                         <div class="page-content">
-                            <form id="assign_role">
-                                <table class="tb-form">
-                                    <tr>
-                                        <td><label for="role_name">Select Role:</label></td>
-                                        <td>
-                                            <select name="roles" id="roles">
-                                                <option value="admin">Administrator</option>
-                                                <option value="attendant">Attendant</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><label for="user">Select User:</label></td>
-                                        <td>
-                                            <select name="roles" id="roles">
-                                                <option value="user_id">Selemani Nuru</option>
-                                                <option value="user_id">John Doe</option>
-                                                <option value="user_id">Simon Paul</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td><button type="submit" id="assign_btn">Assign</button></td>
-                                    </tr>
-                                </table>
+                            <form id="addRoleForm">
+                                <label for="cat_name">Category:</label>
+                                <input name="cat_name" type="text">
+                                <button type="submit" id="add_tegory">Add</button>
                             </form>
                         </div>
                     </div>
