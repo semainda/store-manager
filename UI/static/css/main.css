@@ -85,7 +85,7 @@ button, select {
     width: 100%;
 }
 
-button {
+button, .process_sale {
     background-color: #0cb;
     text-align: center; 
     cursor: pointer;
@@ -94,7 +94,7 @@ button {
     border-radius: 2px;
 }
 
-button:hover {
+button:hover, .process_sale:hover {
     background-color: #1ab394;
 }
 .fa-user, .fa-lock {
@@ -288,4 +288,13 @@ td , input, label, button {
 .tb-form #add_user, #assign_btn{
     width: 30%;
     align-content: right;
+}
+
+.process_sale{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
