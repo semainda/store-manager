@@ -229,26 +229,10 @@ li a:hover {
     color: #0cb;
     border-bottom: 1px solid #ddd;
 }
-.page-content{
+.page-content {
     padding: 20px;
 }
 
-.pages-view a {
-    display: block;
-    float: right;
-    text-decoration: none;
-    padding: 10px;
-    background-color: #0cb;
-    text-transform: uppercase;
-    color: #fff;
-    margin-top: 10px;
-    text-align: center;
-    border: 1px solid transparent;
-    border-radius: 2px;
-}
-.pages-view a:hover{
-    background-color: #1ab394;
-}
 #addRoleForm {
     width: 100%;
     font-family:"Roboto",Arial,sans-serif;
