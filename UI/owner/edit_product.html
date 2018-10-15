@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store | Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../static/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main-window">
+            <div class="dash-lf">
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-gear"></i> Manage Roles</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_role.html">Add New Role</a>
+                        </li>
+                        <li>
+                            <a href="roles.html">All Roles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-users"></i> Manage Users</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_user.html">Add New User</a>
+                        </li>
+                        <li>
+                            <a href="assign_role.html">Assign User Role</a>
+                        </li>
+                        <li>
+                            <a href="users.html">All Users</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-shopping-cart"></i> Manage Categories</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_category.html">Add New Category</a>
+                        </li>
+                        <li>
+                            <a href="add_sub_category.html">Add Sub-Category</a>
+                        </li>
+                        <li>
+                            <a href="categories.html">All Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Product</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_product.html" class="active">Add New Product</a>
+                        </li>
+                        <li>
+                            <a href="products.html">All Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Sales</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="#">Add New Sale</a>
+                        </li>
+                        <li>
+                            <a href="#">All Sales Records</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dash-rt">
+                <div class="dash-rt-top">
+                    <span>Welcome to Store Manager Administrator Dashboard </span>|
+                    <a href="#"><i class="fa fa-sun-o"></i> Your Account</a>|
+                    <a href="../../index.html"><i class="fa fa-sign-out"></i> Log out</a>
+                </div>
+                <div class="dash-rt-main">
+                    <div class="pages-view">
+                        <div class="page-title">
+                            <span>Update Product Form</span>
+                        </div>
+                        <div class="page-content">
+                            <form id="addSubForm">
+                                <table class="tb-form">
+                                    <tr>
+                                        <td><label for="prod_name">Name:</label></td>
+                                        <td><input type="text" name="prod_name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_category">Category:</label></td>
+                                        <td>
+                                            <select required>
+                                                <option value="electronics">Electronics</option>
+                                                <option value="clothes">Clothes</option>
+                                                <option value="drinks">Drinks</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="sub_category">Category:</label></td>
+                                        <td>
+                                            <select required>
+                                                <option value="desktop">Desktop</option>
+                                                <option value="tv">TV</option>
+                                                <option value="soda">Soda</option>
+                                                <option value="water">Water</option>
+                                                <option value="tshirt">T-shirts</option>
+                                                <option value="jackets">Jackets</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_qty">Quantity:</label></td>
+                                        <td><input type="number" name="qty" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_size">Size:</label></td>
+                                        <td><input type="text" name="prod_size"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_price">Price:</label></td>
+                                        <td><input type="number" name="prod_price" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button type="submit" id="add-prod-btn">Update</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
