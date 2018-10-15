@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | User</title>
+    <title>Store | Product</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -30,7 +30,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_user.html" class="active">Add New User</a>
+                            <a href="add_user.html">Add New User</a>
                         </li>
                         <li>
                             <a href="assign_role.html">Assign User Role</a>
@@ -60,7 +60,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_product.html">Add New Product</a>
+                            <a href="add_product.html" class="active">Add New Product</a>
                         </li>
                         <li>
                             <a href="products.html">All Products</a>
@@ -92,28 +92,53 @@
                 <div class="dash-rt-main">
                     <div class="pages-view">
                         <div class="page-title">
-                            <span>New User Form</span>
+                            <span>Update Product Form</span>
                         </div>
                         <div class="page-content">
-                            <form id="addUserForm">
+                            <form id="addSubForm">
                                 <table class="tb-form">
                                     <tr>
-                                        <td><label for="first_name">First Name:</label></td>
-                                        <td><input name="first_name" type="text"></td>
-                                        <td><label for="last_name">Last Name:</label></td>
-                                        <td> <input name="last_name" type="text"></td>
+                                        <td><label for="prod_name">Name:</label></td>
+                                        <td><input type="text" name="prod_name" required></td>
                                     </tr>
                                     <tr>
-                                        <td><label for="email">Email:</label></td>
-                                        <td><input name="email" type="text"></td>
-                                        <td><label for="username">Username:</label></td>
-                                        <td><input name="first_name" type="text"></td>
+                                        <td><label for="prod_category">Category:</label></td>
+                                        <td>
+                                            <select required>
+                                                <option value="electronics">Electronics</option>
+                                                <option value="clothes">Clothes</option>
+                                                <option value="drinks">Drinks</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="sub_category">Category:</label></td>
+                                        <td>
+                                            <select required>
+                                                <option value="desktop">Desktop</option>
+                                                <option value="tv">TV</option>
+                                                <option value="soda">Soda</option>
+                                                <option value="water">Water</option>
+                                                <option value="tshirt">T-shirts</option>
+                                                <option value="jackets">Jackets</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_qty">Quantity:</label></td>
+                                        <td><input type="number" name="qty" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_size">Size:</label></td>
+                                        <td><input type="text" name="prod_size"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="prod_price">Price:</label></td>
+                                        <td><input type="number" name="prod_price" required></td>
                                     </tr>
                                     <tr>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><button type="submit" id="add_user">Add</button></td>
+                                        <td><button type="submit" id="add-prod-btn">Update</button></td>
                                     </tr>
                                 </table>
                             </form>
