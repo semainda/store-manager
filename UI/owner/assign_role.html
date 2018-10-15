@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | Roles</title>
+    <title>Store | Role</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -21,7 +21,7 @@
                             <a href="add_role.html">Add New Role</a>
                         </li>
                         <li>
-                            <a href="roles.html" class="active">All Roles</a>
+                            <a href="roles.html">All Roles</a>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@
                             <a href="add_user.html">Add New User</a>
                         </li>
                         <li>
-                            <a href="assign_role.html">Assign User Role</a>
+                            <a href="assign_role.html" class="active">Assign User Role</a>
                         </li>
                         <li>
                             <a href="#">All Users</a>
@@ -92,28 +92,36 @@
                 <div class="dash-rt-main">
                     <div class="pages-view">
                         <div class="page-title">
-                            <span>Store Manager Roles</span>
+                            <span>New Role Form</span>
                         </div>
                         <div class="page-content">
-                            <table>
-                                <tr>
-                                    <th>Role ID</th>
-                                    <th>Role Name</th>
-                                    <th colspan="2">Actions</th>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Administrator</td>
-                                    <td><a href="edit_role.html"><i class="fa fa-pencil-square-o"></i></a></td>
-                                    <td><a href="roles.html"><i class="fa fa-trash-o"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>02</td>
-                                    <td>Attendant</td>
-                                    <td><a href="edit_role.html"><i class="fa fa-pencil-square-o"></i></a></td>
-                                    <td><a href="roles.html"><i class="fa fa-trash-o"></i></a></td>
-                                </tr>
-                            </table>
+                            <form id="assign_role">
+                                <table class="tb-form">
+                                    <tr>
+                                        <td><label for="role_name">Select Role:</label></td>
+                                        <td>
+                                            <select name="roles" id="roles">
+                                                <option value="admin">Administrator</option>
+                                                <option value="attendant">Attendant</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="user">Select User:</label></td>
+                                        <td>
+                                            <select name="roles" id="roles">
+                                                <option value="user_id">Selemani Nuru</option>
+                                                <option value="user_id">John Doe</option>
+                                                <option value="user_id">Simon Paul</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button type="submit" id="assign_btn">Assign</button></td>
+                                    </tr>
+                                </table>
+                            </form>
                         </div>
                     </div>
                 </div>

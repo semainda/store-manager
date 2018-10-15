@@ -284,7 +284,7 @@ td , input, label, button {
     padding: 0;
 }
 
-.tb-form #add_user {
+.tb-form #add_user, #assign_btn{
     width: 30%;
     align-content: right;
 }
