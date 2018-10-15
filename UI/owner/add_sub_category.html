@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Store | Role</title>
+    <title>Store | Sub-Category</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -18,7 +18,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a href="add_role.html" class="active">Add New Role</a>
+                            <a href="add_role.html">Add New Role</a>
                         </li>
                         <li>
                             <a href="roles.html">All Roles</a>
@@ -48,7 +48,7 @@
                             <a href="add_category.html">Add New Category</a>
                         </li>
                         <li>
-                            <a href="add_sub_category.html">Add Sub-Category</a>
+                            <a href="add_sub_category.html" class="active">Add Sub-Category</a>
                         </li>
                         <li>
                             <a href="#">All Categories</a>
@@ -92,13 +92,30 @@
                 <div class="dash-rt-main">
                     <div class="pages-view">
                         <div class="page-title">
-                            <span>New Role Form</span>
+                            <span>New Product Sub-Category Form</span>
                         </div>
                         <div class="page-content">
-                            <form id="addRoleForm">
-                                <label for="role_name">Role Name:</label>
-                                <input name="role_name" type="text">
-                                <button type="submit" name="add_role" id="add_role">Add</button>
+                            <form id="addSubForm">
+                                <table class="tb-form">
+                                    <tr>
+                                        <td><label for="cat_name">Category:</label></td>
+                                        <td>
+                                            <select>
+                                                <option value="electronics">Electronics</option>
+                                                <option value="clothes">Clothes</option>
+                                                <option value="drinks">Drinks</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <label for="sub_name">Sub-Category:</label></td>
+                                        <td><input type="text" name="sub-cat"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button type="submit" id="add_tegory">Add</button></td>
+                                    </tr>
+                                </table>
                             </form>
                         </div>
                     </div>
