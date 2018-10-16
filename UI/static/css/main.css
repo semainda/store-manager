@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #111;
+    background-color: #ddd;
+    font-size: .75em;
+    text-align: left;
+}
+.wrapper {
+    width: 100%;
+}
+#main-window {
+    margin: 0 auto;
+    width: 70%;
+}
+#login {
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+#title {
+    margin: 0 auto;
+}
+
+#title a, span {
+    display: block;
+    text-align: center;
+}
+
+#title a {
+    text-decoration: none;
+    color: #1ab394;
+    font-size: 2em;
+}
+#title span{
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+}
+
+.form {
+    width: 332px;
+    margin: 15px auto;
+    padding: 30px;
+    font-family:"Roboto",Arial,sans-serif;
+    background-color: #fff;
+    display: block;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.18), 0 1px 3px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    flex-direction: column;
+}
+label{
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 400;
+    color: #555;
+    line-height: 21px;
+    float: left;
+}
+input, button, select {
+    padding: 0;
+    width: 267px;
+    height: 2.5em;
+    border-width: 2px;
+    line-height: normal;
+    font-size: 16px;
+    font-family:"Roboto",Arial,sans-serif;
+    display: block;
+    margin-bottom: 1em;
+    background: #fff;
+}
+input {
+    text-indent: 25px;
+}
+select {
+    text-indent: 5px;
+}
+input:focus {
+    box-shadow: none;
+    border: 1px solid #1ab394;
+}
+
+button, select {
+    width: 100%;
+}
+
+button, .process_sale {
+    background-color: #0cb;
+    text-align: center; 
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+button:hover, .process_sale:hover {
+    background-color: #1ab394;
+}
+.fa-user, .fa-lock {
+    margin-top: -45px;
+    float: left;
+    margin-left: 10px;
+}
+.form a {
+    display: block;
+    margin-bottom: 7px;
+    color: #0cb;
+    text-decoration: none;
+    float: right;
+    line-height: 21px;
+    cursor: pointer;
+}
+.form a:hover {
+    text-decoration: underline;
+    color: #1ab394;
+}
+.footer{
+    margin: 0 auto;
+    width: 70%;
+}
+hr {
+    border-color: #fff;
+    width: 100%;
+}
+
+.footer span {
+    color: #555;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+/*Styling the dashboard*/
+
+.dash-lf {
+    width: 20%;
+    float: left;
+    margin-bottom: 10px;
+}
+.main-panel-lf{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.18), 0 1px 3px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #0cb;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: .875em;
+}
+li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    color:#555;
+}
+
+li a:hover {
+    color: #ddd;
+}
+
+.dash-rt {
+    width: 80%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.dash-rt-top{
+    display: inline-block;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    text-align: right;
+}
+
+.dash-rt-top span{
+    display: inline;
+    padding-right: 10px;
+    color: #555;
+}
+.dash-rt-top a {
+    text-decoration: none;
+    color: #0cb;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+}
+.dash-rt-top a:hover{
+    color: #1ab394;
+    font-weight: 400;
+}
+
+.active {
+    color: #1ab394;
+}
+/*dashboard-content area*/
+.pages-view{
+    width: 99%;
+    margin: 10px 0 10px 10px;
+    display: block;
+    background-color: #f4f4f4;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.18), 0 1px 3px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    flex-direction: column;
+    font-size: 13px;
+}
+.page-title span{
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: 500;
+}
+.page-title {
+    color: #0cb;
+    border-bottom: 1px solid #ddd;
+}
+.page-content {
+    padding: 20px;
+}
+
+#addRoleForm {
+    width: 100%;
+    font-family:"Roboto",Arial,sans-serif;
+    height: 38px;
+}
+
+#addRoleForm label, input, button {
+    display: inline-block;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+}
+#addRoleForm label{
+    width: 10%;
+}
+
+#addRoleForm input {
+    width: 60%;
+    height: 34px;
+}
+#addRoleForm button, #add_sub-btn, #add-prod-btn{
+    width: 10%;
+}
+/*Styling tables*/
+table, .tb-form {
+    width: 100%;
+    color: #555;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+table th, td {
+    padding: 5px;
+}
+td a{
+    color: #0cb;
+}
+td a:hover{
+    color: #1ab394;
+}
+
+.tb-form td {
+    border: none;
+}
+
+td , input, label, button {
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+}
+
+.tb-form #add_user, #assign_btn{
+    width: 30%;
+    align-content: right;
+}
+
+.process_sale{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 10px;
+}

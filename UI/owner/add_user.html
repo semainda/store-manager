@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store | User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../static/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main-window">
+            <div class="dash-lf">
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-gear"></i> Manage Roles</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_role.html">Add New Role</a>
+                        </li>
+                        <li>
+                            <a href="roles.html">All Roles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-users"></i> Manage Users</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_user.html" class="active">Add New User</a>
+                        </li>
+                        <li>
+                            <a href="assign_role.html">Assign User Role</a>
+                        </li>
+                        <li>
+                            <a href="users.html">All Users</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-shopping-cart"></i> Manage Categories</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_category.html">Add New Category</a>
+                        </li>
+                        <li>
+                            <a href="add_sub_category.html">Add Sub-Category</a>
+                        </li>
+                        <li>
+                            <a href="categories.html">All Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Product</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="add_product.html">Add New Product</a>
+                        </li>
+                        <li>
+                            <a href="products.html">All Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel-lf">
+                    <span class="nav-label"><i class="fa fa-cart-plus"></i> Manage Sales</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="new_sale.html">Add New Sale</a>
+                        </li>
+                        <li>
+                            <a href="sales.html">All Sales Records</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales Reports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dash-rt">
+                <div class="dash-rt-top">
+                    <span>Welcome to Store Manager Administrator Dashboard </span>|
+                    <a href="#"><i class="fa fa-sun-o"></i> Your Account</a>|
+                    <a href="../../index.html"><i class="fa fa-sign-out"></i> Log out</a>
+                </div>
+                <div class="dash-rt-main">
+                    <div class="pages-view">
+                        <div class="page-title">
+                            <span>New User Form</span>
+                        </div>
+                        <div class="page-content">
+                            <form id="addUserForm">
+                                <table class="tb-form">
+                                    <tr>
+                                        <td><label for="first_name">First Name:</label></td>
+                                        <td><input name="first_name" type="text"></td>
+                                        <td><label for="last_name">Last Name:</label></td>
+                                        <td> <input name="last_name" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email:</label></td>
+                                        <td><input name="email" type="text"></td>
+                                        <td><label for="username">Username:</label></td>
+                                        <td><input name="first_name" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button type="submit" id="add_user">Add</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
