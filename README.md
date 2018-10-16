@@ -70,4 +70,4 @@ https://semainda.github.io/store-manager/
 
 ```chromium index.html```
 
-- Or double click the index.html page to get started with the application.
+```Or double click the index.html page to get started with the application.```
