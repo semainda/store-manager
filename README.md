@@ -13,7 +13,7 @@ https://semainda.github.io/store-manager/
 ### Administrator Templates
 
 1. Login
-2. Dashoard
+2. Dashboard
 3. Add product category
 4. Edit product category
 5. List all product categories
@@ -22,7 +22,7 @@ https://semainda.github.io/store-manager/
 8. Edit product
 9. List all stock products
 10. Add role
-11. Asign user role
+11. Assign user role
 12. Edit role
 13. List all roles
 14. Add users
